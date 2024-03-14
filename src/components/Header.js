@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="fixed-top navbar-dark bg-dark">
           <Container>
             <Navbar.Brand href="/home">My Streamify Website</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
