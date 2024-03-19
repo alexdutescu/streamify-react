@@ -7,13 +7,13 @@ export const MoviesList = () => {
     return(
         <div>
             <h2>Movies</h2>
-            <ul>
-            {movies != null && movies.map((movie) => (
-                    //console.log(movie) 
-                    <MovieCard key={movie.imdbID} movie={movie} />
-                )
-            )}
-            </ul>
+            <div className="row row-cols-2">
+                {movies != null && movies.size > 1 && movies.map((movie) => (
+                        //console.log(movie) 
+                        <MovieCard className="col" key={movie.imdbID} movie={movie} />
+                    )
+                )}
+            </div>
         </div>
     )
 }
