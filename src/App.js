@@ -3,7 +3,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-
 import {BrowserRouter,Navigate,Route,Routes} from 'react-router-dom';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
