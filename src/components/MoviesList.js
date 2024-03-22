@@ -8,7 +8,7 @@ export const MoviesList = () => {
         <div>
             <h2>Movies</h2>
             <div className="row row-cols-2">
-                {movies != null && movies.size > 1 && movies.map((movie) => (
+                {movies != null && movies.length > 1 && movies.map((movie) => (
                         //console.log(movie) 
                         <MovieCard className="col" key={movie.imdbID} movie={movie} />
                     )
